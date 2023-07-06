@@ -1,0 +1,120 @@
+/* ************** CUSTOM PROPERTIES *********************** */
+
+:root {
+    --first-color: rgb(217, 0, 98);
+    --first-alpha-color: rgba(217, 0, 98, 0.75);
+    --second-color: rgb(20, 25, 45);
+    --second-alpha-color: rgba(20, 25, 45, 0.75);
+    --third-color: rgb(80, 20, 100);
+    --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+    --link-color: rgb(80, 158, 227);
+    --link-alpha-color: rgb(80, 158, 227, 0.75);
+
+    --bg-color: rgb(245, 245, 245);
+    --br-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+.bg-custom {
+    --bs-bg-opacity: 0.9;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+
+}
+
+.size-img {
+    height: 3rem;
+    width: auto;
+}
+
+
+/* ************** RESET STYLES  *********************** */
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+a {
+    color: var(--link-color);
+    transition: all .3s ease-out;
+}
+
+a:hover {
+    color: var(--first-alpha-color);
+}
+
+.nav-item {
+
+    transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+    background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+    margin-left: .5rem;
+    color: var(--first-color);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: var(--bs-white);
+}
+
+.dropdown-item {
+    /* background-color: red; */
+    color: var(--first-alpha-color);
+}
+
+.dropdown-item:hover {
+    transition: all 0.3s ease-out;
+    background-color: var(--first-alpha-color);
+    color: white;
+}
+
+.navbar-dark .navbar-toggler {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: all 1s ease-out;
+}
+
+.navbar-dark .navbar-toggler:hover {
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    opacity: 0.75;
+}
+
+/* ************** BOOTSTRAP STYLE *********************** */
+
+
+
+/* ************** MY STYLES *********************** */
+
+.bg-gradient {
+    background-color: rgb(12, 5, 131);
+    background-image: linear-gradient(90deg,
+            rgba(12, 5, 131, 1) 28%,
+            rgba(38, 38, 182, 1) 47%,
+            rgba(0, 212, 255, 1) 73%);
+}
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .nav-item:hover {
+        background-color: transparent;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
