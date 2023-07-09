@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav  ms-lg-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="#footer">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -51,13 +51,86 @@
     </div>
   </nav>
 
+  <body>
+    <!-- Contenido de tu página -->
+
+    <head>
+      <!-- Otros elementos del encabezado -->
+
+      <style>
+        /* .whatsapp-float {
+          background-color: green;
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 24px;
+          z-index: 100;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        } */
+        .whatsapp-float {
+          height: 3em;
+          background-color: green;
+          position: fixed;
+          bottom: 40px;
+          right: 40px;
+          font-size: 16px;
+          z-index: 100;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      </style>
+    </head>
+
+    </head>
+
+    <a href="https://api.whatsapp.com/send?phone=TUNUMERODETELEFONO" class="btn btn-floating btn-primary whatsapp-float"
+      target="_blank">
+      <!-- <i class="bi bi-whatsapp" style="line-height: inherit;"></i> -->
+      <span>Soy un botón flotante</span>
+
+    </a>
+
+
+
+
+
+
+  </body>
+
   <main class="pt-5 bg-gradient">
-    <h1 class="text-white">Sección Inicio</h1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="container">
+      <section class="row text-white align-items-center">
+        <article class="col-12 col-lg-5">
+          <h2>¿Necesitas un sitio web increible?</h2>
+          <P class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto, laudantium aspernatur totam soluta unde aperiam rerum similique qui asperiores?</P>
+          <a href="#servicios" class="btn btn-success fw-bold">Sí, empecemos!</a>
+        </article>
+        <article class="col-12 col-lg-7">
+          <img class="img-fluid img-size" src="img/dog.jpg" alt="">
+        </article>
+        <article class="col-12 col-lg-5 order-1">
+          <h2>Lorem ipsum dolor sit.</h2>
+          <P class="fs-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium architecto, laudantium aspernatur totam soluta unde aperiam rerum similique qui asperiores?</P>
+        </article>
+        
+        <article class="col-12 col-lg-7 ">
+          <img class="img-fluid img-size" src="img/dog2.jpg" alt="">
+        </article>
+      </section>
+      <section class="row"></section>
+    </div>
+
   </main>
 
-  <footer class="bg-dark p-3">
+  <footer class="bg-dark p-3" id="footer">
     <div class="container text-center">
       <nav class="d-flex justify-content-evenly">
         <a href="http://.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a>

@@ -97,6 +97,10 @@ a:hover {
             rgba(0, 212, 255, 1) 73%);
 }
 
+.img-size {
+    height: 30rem;
+}
+
 /* // X-Small devices (portrait phones, less than 576px) */
 /* // No media query for `xs` since this is the default in Bootstrap */
 
